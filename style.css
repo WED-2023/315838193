@@ -1,7 +1,100 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+#containr {
+	display: flex;
+	flex-direction: column;
+}
+
+#content {
+	display: flex;
+	flex-grow:  1;
+}
+#toolbar {
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap onto next row */
+}
+
+.logo img {
+    width: 100px;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Add flex display for list items */
+    flex-wrap: wrap; /* Allow items to wrap onto next row */
+}
+
+.menu ul li {
+    margin-right: 20px;
+    margin-bottom: 10px; /* Add bottom margin to create space between rows */
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    background-color: darkblue;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: blue;
+}
+
+#thepage {
+    position: relative;
+    top: 10px;
+    width: 50%;
+    height: 100px;
+    background-color: lightcyan;
+    border-radius: 0 0 10px 10px; /* Rounded corners only on bottom */
+    padding: 20px;
+    overflow: hidden; /* Prevents overflow content from pushing the button out */
+    float: left; /* Aligns the "thepage" to the left */
+}
+
+#thepage-text {
+    font-size: 18px;
+    margin: 0;
+}
+
+#translate-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+	background-color: lightgoldenrodyellow;
+}
+
+.mostlovepic img {
+	margin-top: 10px;
+	padding-left: 80px;
+	float: left;
+	width: 25%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+#about-me {
+    text-align: center; /* Center the text horizontally */
+    background-color: #f0f0f0; /* Background color */
+    padding: 10px 0; /* Add padding for spacing */
+}
+
+#about-me h2 {
+    font-size: 24px; /* Font size */
+    color: #333; /* Text color */
+    border-bottom: 2px solid #333; /* Add a bottom border */
+    display: inline-block; /* Make the border span the entire width of the text */
+    padding: 0 20px; /* Add padding to the text */
 }
