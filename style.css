@@ -7,39 +7,89 @@
 	display: flex;
 	flex-grow:  1;
 }
+/* #toolbar { */
+    /* background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap onto next row */
+	/* min-width: 300px; Set a minimum width for the toolbar */ */
+/* } */
 
+/* .logo img { */
+    /* width: 100px;
+    height: auto; /* Maintain aspect ratio */
+    /* border-radius: 50%; */ */
+/* } */
+
+/* .menu ul { */
+    /* list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Add flex display for list items */
+    /* flex-wrap: wrap; Allow items to wrap onto next row */ */
+/* } */
+
+/* .menu ul li { */
+    /* margin-right: 20px;
+    margin-bottom: 10px; Add bottom margin to create space between rows */
+/* } */
+
+/* .menu ul li:last-child { */
+    /* margin-right: 0; */
+/* } */
+
+/* .menu ul li a { */
+    /* text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    background-color: darkblue;
+    padding: 10px;
+    transition: background-color 0.3s; */
+/* } */
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
 .logo img {
-    width: 200px; /* Adjust width as needed */
+    width: 80px; /* Adjust width as needed */
     border-radius: 50px;
 }
 body {
     font-family: "Montserrat", sans-serif;
+    padding-top: 100px;
 }
 
 nav {
     display: flex;
     position: fixed;
+    top: 0; /* Fixed position from the top */
+    width: 100%; /* Full width */
     align-items: center; /* Align items vertically */
     justify-content: space-between; /* Space between logo and menu */
-    background-color: white;
+    background-color: teal;
     padding: 10px 20px; /* Add padding for better appearance */
     z-index: 1000;
 }
 
 .menu {
     list-style-type: none;
+    margin: 0;
     padding: 0;
     display: flex;
 }
 
 .menu li {
-    margin: 0 10px;
+    margin: 20px; /* Adjust margin for all list items */
+}
+
+.menu li:first-child {
+    margin-right: auto; /* Push the first menu item to the left */
 }
 
 .menu li a {
@@ -58,6 +108,7 @@ nav {
 .menu li a:hover:not(.active) {
     background-color: lightseagreen;
 }
+
 
 
 #thepage {
@@ -278,4 +329,10 @@ h4 {
     color: #666; /* Answer color */
   }
   
+  .divider {
+    border-top: 100px solid rgb(239, 240, 181); /* Change the color and thickness as needed */
+    width: calc(100%); /* Adjust the width according to your layout */
+    margin: 0 auto; /* Center the divider */
+  }
+
   
