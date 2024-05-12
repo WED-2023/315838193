@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <body>
     <div id="toolbar">
         <div class="logo">
             <img src="logo.avif" alt="Logo">
@@ -21,98 +22,101 @@
         </div>
     </div>
 		<div id="thepage">
+      <div class="content">
       <p id="thepage-text">Welcome to our page! Here you can find information about me, view my photos, listen to my playlist, like my content, generate QR codes, ask questions, and get in touch with me. Feel free to explore!</p>
       <button id="translate-btn" onclick="translateText()">Translate</button>
+      </div>
     </div>
-    <div class="mostlovepic">
-      <img src = mostlovepic.webp alt = "mostlovepic">
-    </div>
-      <script src="script.js"></script>
+      
     
 
 <section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<div id="about-me">
-  <h2>About Me</h2>
-  <p>Mois, a resilient soul of 85 years, was born on May 7, 1939, in the vibrant city of Haifa, Israel. His journey through life has been woven with the threads of love and companionship, as he has been joyfully married to Josy for six fruitful decades. Mois embodies a life rich in experiences, marked by the tapestry of family, love, and cherished memories. Through the years, he has weathered the storms of time with grace and resilience, leaving an indelible mark on the hearts of those around him. His journey stands as a testament to the enduring power of love and the beauty of a life well-lived.</p>
-</div>
-<br/>
-<br/>
-<br/>
+  <br/>
+  <div id="about-me">
+    <h2>About Me</h2>
+    <p>Mois, a resilient soul of 85 years, has left an indelible mark on the tapestry of life since his birth on May 7, 1939, in the vibrant city of Haifa, Israel. His journey through life has been a testament to enduring love and steadfast companionship, having shared six fruitful decades of marriage with his beloved Josy. Mois's life is a mosaic of rich experiences, interwoven with the warmth of family, the depth of love, and the treasure trove of cherished memories. With grace and resilience, he has weathered the storms of time, leaving an enduring legacy of love and kindness that has touched the hearts of all those around him. His life stands as a beacon, illuminating the enduring power of love and the beauty of a life well-lived.</p>
+
+    <p>In addition to his remarkable life journey, Mois has cultivated a diverse array of hobbies that have added vibrancy and depth to his existence. From the tender age of 6, basketball has been a passion, igniting his spirit with the thrill of competition and camaraderie. Music has also been a constant companion throughout his life, with the gentle strumming of his guitar providing solace and joy in equal measure. Beyond the confines of his home, Mois tends to his farm with care and dedication, finding solace in the earth's embrace and nourishing its bounty. Furthermore, his thirst for adventure has led him to traverse the globe, exploring its myriad wonders and forging unforgettable memories in distant lands.</p>
+
+    <p>Throughout his illustrious life, Mois dedicated over 25 years to a noble profession, serving with distinction in the ranks of law enforcement. As a stalwart member of the police force, he undertook the solemn duty of investigation, tirelessly seeking truth and justice to uphold the fabric of society. With unwavering commitment and unwavering resolve, Mois navigated the complexities of his profession, leaving an indelible imprint on the annals of law enforcement. His tenure stands as a testament to his integrity, diligence, and unwavering dedication to the pursuit of justice.</p>
+    
+    <p>Now, Mois finds solace in the company of his beloved wife, Josy, after years of dedication and hard work. He cherishes the blessing of having an amazing family, consisting of two loving sons. One of his sons has three children, while the other has one child. Mois loves his grandchildren dearly and would do anything for his family, their happiness being his greatest joy.</p>
+
+    <div class="next-button-container">
+      <button id="next-button" onclick="replaceText()">>></button>
+    </div>
+
+  </div>
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+  <br/>
+  <div id="my-photos">
+      <h3>My Photos</h3>
+      <div class="photo-grid">
+        <div class="photo-thumbnail" onclick="openModal('picture1.jpg')">
+              <img src="picture1.jpg" alt="Photo 1">
+          </div>
+          <div class="photo-thumbnail" onclick="openModal('picture2.jpg')">
+              <img src="picture2.jpg" alt="Photo 2">
+          </div>
+          <div class="photo-thumbnail" onclick="openModal('picture3.jfif')">
+              <img src="picture3.jfif" alt="Photo 2">
+          </div>
+          <div class="photo-thumbnail" onclick="openModal('picture4.jpg')">
+            <img src="picture4.jpg" alt="Photo 2">
+          </div>
+          <div class="photo-thumbnail" onclick="openModal('picture5.jfif')">
+            <img src="picture5.jfif" alt="Photo 2">
+          </div>
+          <div class="photo-thumbnail" onclick="openModal('picture6.jfif')">
+            <img src="picture6.jfif" alt="Photo 2">
+          </div>
+          <div class="photo-thumbnail" onclick="openModal('picture7.jfif')">
+            <img src="picture7.jfif" alt="Photo 2">
+          </div>
+          <div class="photo-thumbnail" onclick="openModal('picture8.jfif')">
+            <img src="picture8.jfif" alt="Photo 2">
+          </div>
+          <div class="photo-thumbnail" onclick="openModal('picture9.jfif')">
+            <img src="picture9.jfif" alt="Photo 2">
+          </div>
+          <div class="photo-thumbnail" onclick="openModal('picture10.jfif')">
+            <img src="picture10.jfif" alt="Photo 2">
+          </div>
+          <div class="photo-thumbnail" onclick="openModal('picture11.jfif')">
+            <img src="picture11.jfif" alt="Photo 2">
+          </div>
+          <div class="photo-thumbnail" onclick="openModal('picture12.jfif')">
+            <img src="picture12.jfif" alt="Photo 2">
+          </div>
+          <!-- Add more photo thumbnails here -->
+      </div>
+  </div>
 </section>
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal">
+  <span class="close-button" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <img id="modalImage" src="" alt="Enlarged Photo">
+  </div>
+</div>
 
 <section id="playlist" class="section">
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+<div id="my-playlist">
+  <h4>My Playlist</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fJ9rUzIMcZQ?si=PLqImCQdnxKAAvUW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 </section>
 
 <section id="like" class="section">
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
+<div id="Give-me-a-like">
+  <h4>Give me a like</h4>
+</div>
 <br/>
 <br/>
 <br/>
@@ -201,5 +205,7 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+<script src="script.js"></script>
 </body>
 </html>
