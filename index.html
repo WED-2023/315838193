@@ -4,30 +4,30 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <body>
-    <div id="toolbar">
-        <div class="logo">
-            <img src="logo.avif" alt="Logo">
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#photos">My Photos</a></li>
-                <li><a href="#playlist">My Playlist</a></li>
-                <li><a href="#like">Like</a></li>
-                <li><a href="#qrcoder">QR code</a></li>
-                <li><a href="#spa">Q&A</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </div>
-    </div>
+  
+<nav>
+  <div class="heading">
+    <div class="logo">
+      <img src="logo.avif" alt="Logo">
+  </div>
+  </div>
+  <ul class="menu">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#playlist">My Playlist</a></li>
+      <li><a href="#like">Like</a></li>
+      <li><a href="#qrcoder">QR code</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+  </ul>
+</nav>
 		<div id="thepage">
       <div class="content">
         <div id="thepage-text">
           <p>Welcome to our page!</p>
           <p>Here you can find information about me, view my photos, listen to my playlist, like my content, generate QR codes, ask questions, and get in touch with me. Feel free to explore!</p>
         </div>
-      <!-- <button id="translate-btn" onclick="translateText()">Translate</button> -->
       </div>
     </div>
       
@@ -44,11 +44,6 @@
     <p>Throughout his illustrious life, Mois dedicated over 25 years to a noble profession, serving with distinction in the ranks of law enforcement. As a stalwart member of the police force, he undertook the solemn duty of investigation, tirelessly seeking truth and justice to uphold the fabric of society. With unwavering commitment and unwavering resolve, Mois navigated the complexities of his profession, leaving an indelible imprint on the annals of law enforcement. His tenure stands as a testament to his integrity, diligence, and unwavering dedication to the pursuit of justice.</p>
     
     <p>Now, Mois finds solace in the company of his beloved wife, Josy, after years of dedication and hard work. He cherishes the blessing of having an amazing family, consisting of two loving sons. One of his sons has three children, while the other has one child. Mois loves his grandchildren dearly and would do anything for his family, their happiness being his greatest joy.</p>
-
-    <div class="next-button-container">
-      <button id="next-button" onclick="replaceText()">>></button>
-    </div>
-
   </div>
 </section>
 
@@ -93,7 +88,6 @@
           <div class="photo-thumbnail" onclick="openModal('picture12.jfif')">
             <img src="picture12.jfif" alt="Photo 2">
           </div>
-          <!-- Add more photo thumbnails here -->
       </div>
   </div>
 </section>
@@ -117,12 +111,7 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
 </div>
-
 </section>
 
 <section id="like" class="like-section">
@@ -131,63 +120,71 @@
     <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwed-2023.github.io%2F315838193%2F&width=450&layout&action&size&share=true&height=35&appId" width="450" height="35" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 </div>
 </section>
-</section>
 
 <section id="qrcoder" class="section">
-<br/>
-<div id="scan-my-code">
-  <h4>Scan my code</h4>
-  <img src="QRCode.jpg" alt="QRCode"><br/>
-</div>
-<br/>
-<br/>
-<br/>
+  <div id="scan-my-code">
+      <div class="centered-content">
+          <h4>Scan my code</h4>
+          <img src="QRCode.jpg" alt="QRCode">
+      </div>
+  </div>
 </section>
+
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+  <br/>
+  <div id="Q-A">
+    <h2>Q&A</h2>
+    <div class="qa-box">
+      <h3 id="qa-title">Three main different between Web1, Web2, Web3:</h3>
+        <!-- Rest of your content -->
+      <p><b>1. Interaction Type -</b></p>
+      <p>Each web represents a different generation of the internet, with each characterized by different levels of interaction with the user. In fact, upon close examination, it appears that over the years, interaction and technological capabilities have improved and changed. <br/> <b>Web1</b> was primarily static, meaning that those who created the content were the website owners themselves, resulting in a less active user experience. <br/> Then, <b>Web2</b> became slightly more attractive to users since the content was user-generated, despite companies and corporations controlling data management. <br/> Finally, <b>Web3</b>, built using blockchain technology, primarily operates on a distributed data model, leading to a high level of user privacy. In essence, the development over the years has allowed users to engage in more complex interactions, enabling them to maintain their data and use distributed applications.</p>
+      <br/>
+      <p><b>2. Data Control - </b></p>
+      <p>It seems that with the development of the web over the years, there has been a difference in data control between the versions. Over time, there has been less reliance on central servers/government authorities, and control over data has primarily shifted to users. <br/>In <b>Web1</b>, data was controlled by central servers, and control was in the hands of the website owners rather than the users. <br/>In <b>Web2</b>, despite the transition from static to a more attractive user experience, large technology companies still controlled user data and profited from it. <br/>In <b>Web3</b>, however, since usage is based on blockchain technology, data storage is decentralized, giving users control and ownership of their data, enhancing their privacy and independence from central authorities.</p>
+      <br/>
+      <p><b>3. Technological Usage - </b></p>
+      <p>Over the years, we can also see changes and advancements in each new version of the web.<br/> In <b>Web1</b>, usage was mainly through basic technologies like HTML and CSS, primarily aimed at providing content to the site, resulting in static sites. <br/> In <b>Web2</b>, there was a shift to slightly more innovative technologies like JavaScript and AJAX, leading to more dynamic usage due to the applications they supported. <br/> In <b>Web3</b>, there was a transition to more advanced technology, namely blockchain, smart contracts, and tokens. This transition led to higher privacy due to increased security levels on the internet, user autonomy, and the promotion of applications on distributed networks, where control is not exerted by any party but the user themselves.</p>
+      <br/>
+    </div>
+    <div class="qa-box">
+      <h3>Use case example of <b>"looking for adverse drug reactions"</b>, differents between Webs:</h3>
+      <p><b>Web1</b>
+      <p>Static:  Imagine visiting a website in Web1 dedicated to adverse drug reactions. The content would likely be static, presenting general information about common reactions without real-time updates or user contributions.</p>
+      <p>Limited Interaction: Users would have limited interaction, perhaps only being able to navigate through a series of static pages with information presented in a one-way manner.</p>
+      <p><b>Web2</b>
+      <p>Dynamic: In Web2, a website dedicated to adverse drug reactions would be more dynamic. Users might encounter features like forums or comment sections where they can share personal experiences and discuss reactions with others.</p>
+      <p>Enhanced Interaction: Users could actively engage by asking questions, sharing their stories, and interacting with other users. This dynamic interaction could provide valuable insights and support for individuals seeking information about adverse reactions.</p>
+      <p><b>Web3</b>
+      <p>Decentralization: In Web3, the landscape for adverse drug reactions could be decentralized. Imagine a platform built on blockchain technology where users have control over their data and interactions.</p>
+      <p>Advanced Interaction: Users could access decentralized applications (dApps) specifically designed to provide real-time updates on adverse reactions, smart contracts ensuring trustless transactions of information, and AI-powered systems for personalized recommendations and insights.</p>
+    </div>
+  </div>
+  <br/>
 </section>
 
+
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
+  <h2>Contact Me</h2>
+  <form id="contact-form" action="mailto:noam6446@gmail.com" method="post" enctype="text/plain">
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+      
+      <label for="smiley">Select a smiley:</label><br>
+      <select id="smiley" name="smiley">
+          <option value="😊">😊</option>
+          <option value="😄">😄</option>
+          <option value="😃">😃</option>
+          <option value="😁">😁</option>
+          <option value="😆">😆</option>
+      </select><br><br>
+      
+      <input type="submit" value="Send">
+  </form>
 </section>
 
 

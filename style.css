@@ -7,52 +7,58 @@
 	display: flex;
 	flex-grow:  1;
 }
-#toolbar {
-    background-color: lightgoldenrodyellow;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allow items to wrap onto next row */
-	min-width: 300px; /* Set a minimum width for the toolbar */
-}
 
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 .logo img {
-    width: 100px;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%;
+    width: 200px; /* Adjust width as needed */
+    border-radius: 50px;
+}
+body {
+    font-family: "Montserrat", sans-serif;
 }
 
-.menu ul {
+nav {
+    display: flex;
+    position: fixed;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between logo and menu */
+    background-color: white;
+    padding: 10px 20px; /* Add padding for better appearance */
+    z-index: 1000;
+}
+
+.menu {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    display: flex; /* Add flex display for list items */
-    flex-wrap: wrap; /* Allow items to wrap onto next row */
+    display: flex;
 }
 
-.menu ul li {
-    margin-right: 20px;
-    margin-bottom: 10px; /* Add bottom margin to create space between rows */
+.menu li {
+    margin: 0 10px;
 }
 
-.menu ul li:last-child {
-    margin-right: 0;
-}
-
-.menu ul li a {
+.menu li a {
+    color: black;
     text-decoration: none;
-    color: white;
-    border-radius: 50%;
-    background-color: darkblue;
-    padding: 10px;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-size: cover; /* Adjust background size as needed */
 }
 
-.menu ul li a:hover {
-    background-color: blue;
+.menu li a.active {
+    background-color: #4caf50;
 }
+
+.menu li a:hover:not(.active) {
+    background-color: lightseagreen;
+}
+
 
 #thepage {
     position: relative;
@@ -105,27 +111,12 @@
 }
 
 #about-me h2 {
-    font-size: 24px; /* Font size */
+    font-size: 36px; /* Font size */
     color: #333; /* Text color */
-    border-bottom: 2px solid #333; /* Add a bottom border */
-    display: inline-block; /* Make the border span the entire width of the text */
     padding: 0 20px; /* Add padding to the text */
-}
-
-.next-button-container {
-    position: relative;
-}
-
-#next-button {
-    position: absolute;
-    bottom: 0.1px; /* Adjust the distance from the top */
-    right: 10px; /* Adjust the distance from the right */
-    background-color: lightblue; /* Set background color */
-    color: white; /* Set text color */
-    border: none; /* Remove border */
-    padding: 5px 10px; /* Adjust padding */
-    border-radius: 5px; /* Add border radius */
-    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4c91af;
+    text-align: center;
 }
 
 #my-photos {
@@ -135,11 +126,12 @@
 }
 
 #my-photos h3 {
-    font-size: 24px; /* Font size */
+    font-size: 28px; /* Font size */
     color: #333; /* Text color */
-    border-bottom: 2px solid #333; /* Add a bottom border */
-    display: inline-block; /* Make the border span the entire width of the text */
     padding: 0 20px; /* Add padding to the text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4c91af;
+    text-align: center;
 }
 
 .photo-grid {
@@ -154,10 +146,15 @@
 }
 
 .photo-thumbnail img {
-    width: 100%; /* Make the image fill the container */
+    width: 80%; /* Make the image fill the container */
     border-radius: 5px; /* Add rounded corners */
+    filter: blur(5px); /* Apply blur effect initially */
+    transition: filter 0.3s ease; /* Add transition for smooth effect */
 }
 
+.photo-thumbnail img:hover {
+    filter: blur(0); /* Remove blur effect on hover */
+}
 /* Style for the modal */
 .modal {
     display: none; /* Hide the modal by default */
@@ -200,11 +197,12 @@
 }
 
 #my-playlist h4 {
-    font-size: 24px; /* Font size */
     color: #333; /* Text color */
-    border-bottom: 2px solid #333; /* Add a bottom border */
     display: inline-block; /* Make the border span the entire width of the text */
     padding: 0 20px; /* Add padding to the text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4c91af;
+    text-align: center;
 }
 
 .like-section {
@@ -230,7 +228,54 @@ iframe {
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 30px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4c91af;
+    text-align: center;
 }
+
+.section {
+    text-align: center; /* Center-align content */
+}
+
+.centered-content {
+    display: inline-block; /* Allow centering */
+    text-align: left; /* Reset text alignment */
+}
+
+#scan-my-code {
+    margin-bottom: 20px; /* Add space below the QR code */
+}
+
+#spa h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4c91af;
+    text-align: center;
+}
+
+#Q-A {
+    text-align: left; /* Align text from left to right */
+  }
+  
+  .qa-box {
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Spacing between boxes */
+    margin: 0 auto; /* Center the box horizontally */
+  }
+  
+  .qa-box h3 {
+    font-size: 18px; /* Question font size */
+    color: #333; /* Question color */
+    font-weight: bold; /* Question font weight */
+  }
+  
+  .qa-box p {
+    font-size: 16px; /* Answer font size */
+    color: #666; /* Answer color */
+  }
+  
+  
