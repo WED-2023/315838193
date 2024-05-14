@@ -268,15 +268,6 @@ nav {
     text-align: center;
 }
 
-iframe {
-    border: none;
-    overflow: hidden;
-    width: 100%;
-    max-width: 500px;
-    height: 35px;
-    margin: 0 auto;
-    display: block;
-}
 
 h4 {
     font-size: 30px;
